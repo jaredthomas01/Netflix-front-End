@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ body {
+            background-color: black;
+            color: lightyellow;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .navbar-brand img {
+            height: 40px;
+            background-color: transparent;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/Netflix_login_background.jpg);
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: medium;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .email-signup {
+        width: 30rem;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        overflow: hidden;
+        }
+
+    .email-signup input {
+        flex: 1;
+        padding: 9px;
+        background-color: rgba(0, 0, 0, 0.7); 
+        height: 50px;
+        outline: 0;
+        border-radius: 4px;
+        margin-left: 0;
+        border: 1px solid lightyellow;
+        }
+
+        .email-signup button {
+            background-color: #ff0000;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            font-size: 30px;
+            color: lightyellow;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 15px 30px;
+        }
+       
+    
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .trending-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            white-space: nowrap;
+            position: relative;
+            align-items: center;
+        }
+        
+        .section-title{
+            color: lightyellow;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        
+        }
+        .movie-list {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            padding: 0 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+            transition: transform 0.3s ease-in-out;
+            flex-wrap: nowrap;
+        }
+        
+        .movie-item {
+            min-width: 200px;
+            max-width: 250px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            height: 250px;
+            background-image: url(./images/young\ famous\ and\ africa.jpg);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+        }
+        
+        .movie-item:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+        
+        .movie-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            color: lightyellow;
+        }
+        
+        .movie-thumbnail {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            /* background-image: url(./images/young\ famous\ and\ africa.jpg); */
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            display: block;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .ranking-badge {
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+            color: lightyellow;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif; /* Alternative: 'Impact', 'Oswald', or 'Anton' */
+            font-size: 80px;
+            background-color: transparent;
+            color: black;
+            text-shadow: -2px -2px 0 lightgray, 2px -2px 0 lightgray, -2px 2px 0 lightgray, 2px 2px 0 lightgray;
+        }
+        
+        .trending-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .trending-container::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+        
+        .trending-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: grey;
+            border: none;
+            align-items: center;
+            padding: 20px;
+            height: 200px;
+            font-size: 32px;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 20px;
+            z-index: 10;
+           transition: background 0.3s; 
+        }
+        
+        .trending-arrow:hover {
+            background: gray;
+        }
+        
+        .trending-arrow.left {
+            left: 5px;
+        }
+        
+        .trending-arrow.right {
+            right: 5px;
+        }
+        .reasons-container {
+            padding: 30px 20px;
+        }
+        .cards {
+            text-align: center;
+            padding: 20px;
+            color: lightyellow;
+            border-radius: 10px;
+            background-color: rgba(21, 2, 40, 0.934);
+            margin: 5px;
+            align-items: center;
+        }
+        .faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: black;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+ .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+    border-radius: 4px;
+    padding: 0;
+    background-color: grey;
+
+} 
+
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    background-color: black;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+.footer .lang-btn {
+    color: lightyellow;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
