@@ -79,7 +79,7 @@
             padding: 20px 0;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-            white-space: nowrap;
+            /* white-space: nowrap; */
             position: relative;
             align-items: center;
         }
@@ -99,6 +99,8 @@
             white-space: nowrap;
             transition: transform 0.3s ease-in-out;
             flex-wrap: nowrap;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
         
         .movie-item {
@@ -195,17 +197,21 @@
         .trending-arrow.right {
             right: 5px;
         }
+
+
         .reasons-container {
-            padding: 30px 20px;
+            padding: 0px;
         }
         .cards {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             color: lightyellow;
             border-radius: 10px;
             background-color: rgba(21, 2, 40, 0.934);
-            margin: 5px;
+            margin: 15px;
             align-items: center;
+            
+        
         }
         .faq {
     padding: 10px 12%;
