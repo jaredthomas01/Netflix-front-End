@@ -75,13 +75,14 @@
         
         .trending-container {
             display: flex;
-            overflow-x: auto;
+            overflow-x: visible;
             padding: 20px 0;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
             /* white-space: nowrap; */
             position: relative;
             align-items: center;
+
         }
         
         .section-title{
@@ -173,7 +174,7 @@
             top: 50%;
             transform: translateY(-50%);
             background: rgba(0, 0, 0, 0.7);
-            color: grey;
+            color: white;
             border: none;
             align-items: center;
             padding: 20px;
@@ -184,6 +185,7 @@
             border-radius: 20px;
             z-index: 10;
            transition: background 0.3s; 
+
         }
         
         .trending-arrow:hover {
@@ -191,13 +193,12 @@
         }
         
         .trending-arrow.left {
-            left: 5px;
+            left: 0px;
         }
         
         .trending-arrow.right {
-            right: 5px;
+            right: 0px;
         }
-
 
         .reasons-container {
             padding: 0px;
@@ -209,6 +210,8 @@
             border-radius: 10px;
             background-color: rgba(21, 2, 40, 0.934);
             margin: 15px;
+            width: 400px;
+            height: 300px;
             align-items: center;
             
         
@@ -223,6 +226,7 @@
     font-size: 40px;
     font-weight: 500;
     color: #ff0000;
+    
 }
 
 .accordion {
@@ -234,7 +238,7 @@
 .accordion li {
     list-style: none;
     width: 100%;
-    padding: 5px;
+    padding: 5px ;
 }
 
 .accordion li label {
